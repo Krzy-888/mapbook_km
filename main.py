@@ -12,6 +12,7 @@ def main():
         print('3 - Usuń znajomego')
         print('4 - Zaktualizuj użytkownika')
         print('5 - Zaktualizuj posta użytkownika')
+        print('6 - Wyświetl mape znajomych')
         choice = input('Wybierz opcję:\t')
         print(f'Wybrano opcję {choice}')
         if choice == '0':
@@ -26,6 +27,8 @@ def main():
             update_user(users)
         if choice == '5':
             update_user_post(users)
+        if choice == '6':
+            get_user_map(users)
 
 if __name__ == '__main__':
     main()
